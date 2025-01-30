@@ -108,6 +108,7 @@ def store_results_in_csv(file_path, cracked_passwords):
     print(f"Results written to {file_path}")
 
 def main():
+    logging.info("Hyam Cracker is starting... Preparing to crack passwords.")
     conn = sqlite3.connect('password_cracker.db')
     cursor = conn.cursor()
 
